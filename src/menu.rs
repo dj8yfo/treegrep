@@ -524,7 +524,7 @@ impl<'a, 'b> Menu<'a, 'b> {
                 }
                 command.arg(path);
             }
-            "hx" => {
+            "hx" | "hx_ide_open" => {
                 if let Some(l) = line_num {
                     path.push(format!(":{l}"));
                     command.arg(path);
